@@ -1,5 +1,11 @@
 {
     "java.project.outputPath": "bin",
+    "code-runner.executorMap": {
+        "java": "javac -d \"$workspaceRoot\\bin\" \"$fullFileName\" && java -cp \"$workspaceRoot\\bin\" \"$fileNameWithoutExt\""
+    },
+    "files.exclude": {
+        "**/bin": true
+    },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000
 }
