@@ -1,0 +1,8 @@
+# Compiled Java output
+*.class
+
+# Common Java build directories
+bin/
+out/
+build/
+target/
