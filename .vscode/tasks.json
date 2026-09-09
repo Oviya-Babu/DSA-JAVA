@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run current Java file (separate bin folder)",
+            "type": "shell",
+            "command": "javac -d \"${workspaceFolder}\\bin\" \"${file}\" && java -cp \"${workspaceFolder}\\bin\" \"${fileBasenameNoExtension}\"",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$javac",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

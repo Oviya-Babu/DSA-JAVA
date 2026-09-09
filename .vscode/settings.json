@@ -1,10 +1,18 @@
 {
+    "java.project.sourcePaths": [
+        "Flow Of Programs"
+    ],
     "java.project.outputPath": "bin",
     "code-runner.executorMap": {
         "java": "javac -d \"$workspaceRoot\\bin\" \"$fullFileName\" && java -cp \"$workspaceRoot\\bin\" \"$fileNameWithoutExt\""
     },
+    "code-runner.executorMapByFileExtension": {
+        ".java": "javac -d \"$workspaceRoot\\bin\" \"$fullFileName\" && java -cp \"$workspaceRoot\\bin\" \"$fileNameWithoutExt\""
+    },
+    "code-runner.runInTerminal": true,
     "files.exclude": {
-        "**/bin": true
+        "**/bin": true,
+        "**/*.class": true
     },
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 1000
