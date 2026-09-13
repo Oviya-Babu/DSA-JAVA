@@ -1,5 +1,5 @@
 import java.util.*;
-public class Average{
+public class LinearSearch{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -7,19 +7,23 @@ public class Average{
         for(int i = 0; i < n; i++){
             arr[i] = sc.nextInt();
         }
-        double res = avg(arr);
+        int target = sc.nextInt();
+        String res = linearSearch(arr, target);
         System.out.println(res);
+       
         sc.close();
         
     }
-    public static double avg(int[] arr){
-        double sum = 0;
-        double avg = 0;
+    public static String linearSearch(int[] arr, int target){
+        //String ans = null;
         for(int i = 0; i < arr.length; i++){
-            sum += arr[i];
+            if(arr[i] == target){
+              // ans = "found" ;
+              //  break;
+                return "found";
+            }
         }
-        avg = sum / arr.length;
-        return avg;
-        
+      return "Not found";
     }
+   
 }
