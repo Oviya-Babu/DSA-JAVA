@@ -5,6 +5,7 @@ class ConcatenationOfArrays {
         for(int i = 0; i < nums.length; i++){
             ans[i] = nums[i];
             ans[i+n] = nums[i];
+            // ans[i] = nums[i % n];
         }
         return ans;
         
